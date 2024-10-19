@@ -1,37 +1,13 @@
-import {useEffect, useState} from 'react'
+import React from 'react'
 import './App.css'
 import Header from './component/Header'
-import TodoEditor from './component/TodoEditor'
-import TodoList from './component/TodoList'
-
-const mockTodo = [
-  {
-    id: 0,
-    isDone: false,
-    content: 'React 공부하기',
-    createdDate: new Date().getTime()
-  },
-  {
-    id: 1,
-    isDone: false,
-    content: '빨래 넣기',
-    createdDate: new Date().getTime()
-  },
-  {
-    id: 2,
-    isDone: false,
-    content: '노래 연습하기',
-    createdDate: new Date().getTime()
-  }
-]
 
 function App() {
-  const [todo, setTodo] = useState([mockTodo])
   return (
-    <div className="App">
+    <div className="w-[500px] h-[500px] border-2 mx-auto">
       <Header />
-      <TodoEditor />
-      <TodoList />
+      <h1>TodoEditor Component</h1>
+      <h1>TodoList Component</h1>
     </div>
   )
 }
